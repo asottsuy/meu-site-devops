@@ -1,14 +1,94 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 
 <head>
-    <title>DevOps na prática</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevOps na Prática</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #0f172a;
+            color: #f8fafc;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .card {
+            background: #1e293b;
+            padding: 40px;
+            border-radius: 16px;
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3), 0 8px 10px -6px rgba(0, 0, 0, 0.3);
+            border: 1px solid #334155;
+            max-width: 500px;
+            width: 100%;
+        }
+
+        .badge {
+            background-color: #22c55e;
+            color: #052e16;
+            font-weight: bold;
+            font-size: 0.85rem;
+            padding: 6px 16px;
+            border-radius: 9999px;
+            display: inline-block;
+            margin-bottom: 24px;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        h1 {
+            font-size: 2.2rem;
+            font-weight: 800;
+            margin-bottom: 16px;
+            background: linear-gradient(to right, #38bdf8, #818cf8);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        p {
+            color: #94a3b8;
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+
+        .footer {
+            margin-top: 32px;
+            padding-top: 16px;
+            border-top: 1px solid #334155;
+            font-size: 0.9rem;
+            color: #64748b;
+        }
+
+        .highlight {
+            color: #f97316;
+            font-weight: 600;
+        }
+    </style>
 </head>
 
 <body>
-    <h1>🚀 Meu primeiro CI/CD</h1>
-    <h1>Atualização automática funcionando!</h1>
-    <p>Deploy automático com Cloudflare Pages</p>
+
+    <div class="card">
+        <div class="badge">🚀 Meu Primeiro CI/CD</div>
+        <h1>Atualização Automática</h1>
+        <p>Deploy contínuo realizado com sucesso através do <span class="highlight">Cloudflare Pages</span>.</p>
+
+        <div class="footer">
+            Pipeline DevOps • Executado via GitHub Actions • Felipe Aso
+        </div>
+    </div>
+
 </body>
 
 </html>
